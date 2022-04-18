@@ -1,0 +1,14 @@
+# Hibernar
+1- crypttab - Remover ou comentar a linha the cryptswap
+2- gParted - Deletar a partição swap e criar novamente
+3- swapon - Anotar o UUID
+4- fstab - Trocar /dev/mapper/cryptswap por /dev/sdb6
+5- initramfs-tools - Adicionar RESUME=UUID=xxx
+
+# Grub config
+1- OUTPUT_FILE - /boot/efi/EFI/pop/grub.cfg
+2- GRUB_CMDLINE_LINUX_DEFAULT - resume=UUID=xxx
+
+# Sudo sem password
+1- sudo visudo
+2- gustavolendimuth     ALL=(ALL) NOPASSWD:ALL

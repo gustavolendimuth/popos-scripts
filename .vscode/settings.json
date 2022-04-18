@@ -1,0 +1,14 @@
+// Configuração do corretor ortográfico
+{
+    "cSpell.words": [
+        "brightnessctl",
+        "customizer",
+        "DIRETORIO",
+        "geary",
+        "grubx",
+        "lutris",
+        "LUTRIS",
+        "squashfs",
+        "timedatectl"
+    ]
+}
